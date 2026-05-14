@@ -1,0 +1,52 @@
+# LPO Training Configuration
+# ===========================
+
+# Model settings
+model:
+  name_or_path: "liuhaotian/llava-v1.5-7b"
+  ref_model_path: null  # Path to SFT checkpoint; null = use base model copy
+  vision_tower: "openai/clip-vit-large-patch14-336"
+  freeze_vision: true
+
+# LoRA settings
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules: ["q_proj", "v_proj"]
+  bias: "none"
+
+# Data settings
+data:
+  train_path: "data/train_lpo.json"
+  eval_path: null
+  image_folder: "data/images"
+  n_rank: 4
+  max_length: 512
+
+# LPO hyperparameters
+lpo:
+  beta: 0.1  # Temperature for reward computation
+  # beta=0.05: more aggressive, may be unstable
+  # beta=0.1: recommended default
+  # beta=0.2: more conservative
+  # beta=0.5: over-regularized toward reference
+
+# Training settings
+training:
+  output_dir: "outputs/lpo"
+  num_train_epochs: 2
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4  # Effective batch size = 4 * 4 = 16
+  learning_rate: 2.0e-5
+  warmup_ratio: 0.03
+  lr_scheduler_type: "cosine"
+  weight_decay: 0.0
+  bf16: true
+  tf32: true
+  logging_steps: 10
+  save_steps: 100
+  save_total_limit: 3
+  dataloader_num_workers: 4
+  seed: 42
+  report_to: "wandb"  # Options: wandb, tensorboard, none

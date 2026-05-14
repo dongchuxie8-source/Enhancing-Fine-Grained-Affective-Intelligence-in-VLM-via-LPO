@@ -1,0 +1,82 @@
+[
+  {
+    "id": "emotion_0",
+    "image": "images/sample_happy_high.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Carefully observe this image and analyze the fine-grained emotion intensity."
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the facial muscle features, the emotion intensity ranking is as follows: "
+      }
+    ],
+    "ranked_texts": [
+      "This image shows an intensely joyful expression with a radiant smile and sparkling eyes.",
+      "This image shows a clearly happy expression with a visible smile.",
+      "This image shows a slightly happy expression with upturned lips.",
+      "This image shows a nearly neutral expression with mild pleasantness."
+    ]
+  },
+  {
+    "id": "emotion_1",
+    "image": "images/sample_sad_medium.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Carefully observe this image and analyze the fine-grained emotion intensity."
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the facial muscle features, the emotion intensity ranking is as follows: "
+      }
+    ],
+    "ranked_texts": [
+      "This image shows a clearly sad expression with furrowed brows and a downturned mouth.",
+      "This image shows an intensely sad expression with deep sorrow visible.",
+      "This image shows a slightly sad expression with mild melancholy.",
+      "This image shows a nearly neutral expression with a hint of sadness."
+    ]
+  },
+  {
+    "id": "emotion_2",
+    "image": "images/sample_angry_high.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Carefully observe this image and analyze the fine-grained emotion intensity."
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the facial muscle features, the emotion intensity ranking is as follows: "
+      }
+    ],
+    "ranked_texts": [
+      "This image shows an intensely angry expression with tight lips and narrowed eyes.",
+      "This image shows a clearly angry expression with visible tension.",
+      "This image shows a slightly angry expression with mild irritation.",
+      "This image shows a nearly neutral expression with a hint of annoyance."
+    ]
+  },
+  {
+    "id": "emotion_3",
+    "image": "images/sample_surprise_low.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Carefully observe this image and analyze the fine-grained emotion intensity."
+      },
+      {
+        "from": "gpt",
+        "value": "Based on the facial muscle features, the emotion intensity ranking is as follows: "
+      }
+    ],
+    "ranked_texts": [
+      "This image shows a slightly surprised expression with mild astonishment.",
+      "This image shows a clearly surprised expression with raised eyebrows.",
+      "This image shows a nearly neutral expression with a hint of surprise.",
+      "This image shows an intensely surprised expression with wide-open mouth."
+    ]
+  }
+]
