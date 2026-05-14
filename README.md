@@ -1,4 +1,4 @@
-# LiPO for Fine-Grained Affective Intelligence in VLM
+# LPO for Fine-Grained Affective Intelligence in VLM
 
 **Listwise Preference Optimization for Fine-Grained Affective Intelligence in Vision-Language Models**
 
